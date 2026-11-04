@@ -3,93 +3,66 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'unsafe-inline'; img-src data:; base-uri 'none'; form-action 'none'">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'unsafe-inline'; img-src data:; font-src data:; base-uri 'none'; form-action 'none'">
 <meta name="referrer" content="no-referrer">
-<title>YARISPOSTASI | At Yarışı Tahminleri ve Koşu Analizleri</title>
-<meta name="description" content="At yarışı tahminleri, altılı ganyan analizleri, koşu yorumları; idman, form ve pedigri değerlendirmeleri. TJK yarışları için veriye dayalı platform YARISPOSTASI çok yakında yarispostasi.net'te.">
+<title>YARIŞPOSTASI | Yapay zekâ destekli bağımsız at yarışı analiz platformu</title>
+<meta name="description" content="YARIŞPOSTASI, Türkiye at yarışlarını veriyle okumak için geliştirilen bağımsız bir analiz platformudur: pist, mesafe, idman, form ve pedigri verileri tek yerde. Çok yakında yarispostasi.net'te.">
 <link rel="canonical" href="https://yarispostasi.net/">
 <meta name="robots" content="index, follow">
+<meta name="theme-color" content="#0E4D35">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0MDAgNDAwIiB3aWR0aD0iNDAwIiBoZWlnaHQ9IjQwMCI+PGRlZnM+PGNsaXBQYXRoIGlkPSJ3dCI+PHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjQwMCIgaGVpZ2h0PSIyNzIiLz48L2NsaXBQYXRoPjxjbGlwUGF0aCBpZD0id2IiPjxyZWN0IHg9IjAiIHk9IjI3MiIgd2lkdGg9IjQwMCIgaGVpZ2h0PSIyMDAiLz48L2NsaXBQYXRoPjwvZGVmcz48Y2lyY2xlIGN4PSIyMDAiIGN5PSIyMDAiIHI9IjIwMCIgZmlsbD0iIzBFNEQzNSIvPjxwYXRoIGQ9Ik0yNzYuNSAxNDguMFYxNTEuMEgyMjQuNzVWMTUwLjBRMjI0Ljc1IDE0Mi41IDIxOS4yNSAxMzcuNVEyMTMuNzUgMTMyLjUgMjAyLjUgMTMyLjVRMTkxLjUgMTMyLjUgMTg1LjYyNSAxMzUuNzVRMTc5Ljc1IDEzOS4wIDE3OS43NSAxNDMuNzVRMTc5Ljc1IDE1MC41IDE4Ny43NSAxNTMuNzVRMTk1Ljc1IDE1Ny4wIDIxMy41IDE2MC41UTIzNC4yNSAxNjQuNzUgMjQ3LjYyNSAxNjkuMzc1UTI2MS4wIDE3NC4wIDI3MS4wIDE4NC41UTI4MS4wIDE5NS4wIDI4MS4yNSAyMTMuMFEyODEuMjUgMjQzLjAgMjYxLjM3NSAyNTcuNzVRMjQxLjUgMjcyLjUgMjA4LjAgMjczLjBMMjA3LjUgMjc3LjI1UTIxNy43NSAyNzguMjUgMjI0LjEyNSAyODMuNVEyMzAuNSAyODguNzUgMjMwLjUgMjk5LjVRMjMwLjUgMzEyLjI1IDIyMS41IDMxNy41UTIxMi41IDMyMi43NSAyMDEuMCAzMjIuNzVRMTkyLjI1IDMyMi43NSAxODMuNjI1IDMyMS42MjVRMTc1LjAgMzIwLjUgMTY5LjUgMzE4Ljc1VjMwNS4yNVExNzIuMjUgMzA1LjUgMTgxLjM3NSAzMDYuMzc1UTE5MC41IDMwNy4yNSAxOTguNzUgMzA3LjI1UTIwOC43NSAzMDcuMjUgMjA4Ljc1IDI5OS41UTIwOC43NSAyOTUuNSAyMDYuNjI1IDI5My41UTIwNC41IDI5MS41IDE5OS4yNSAyOTEuNUgxODkuNzVMMTkyLjc1IDI3Mi43NVExNTguNSAyNzEuMCAxMzkuNSAyNTcuMFExMjAuNSAyNDMuMCAxMjAuNSAyMTEuNzVIMTcyLjc1UTE3Mi43NSAyMjQuNzUgMTc5LjUgMjI5LjEyNVExODYuMjUgMjMzLjUgMjAwLjUgMjMzLjVRMjExLjAgMjMzLjUgMjE3Ljg3NSAyMzEuMjVRMjI0Ljc1IDIyOS4wIDIyNC43NSAyMjIuMFEyMjQuNzUgMjE1Ljc1IDIxNy4xMjUgMjEyLjYyNVEyMDkuNSAyMDkuNSAxOTIuMjUgMjA2LjBRMTcxLjI1IDIwMS41IDE1Ny41IDE5Ni42MjVRMTQzLjc1IDE5MS43NSAxMzMuNSAxODAuNVExMjMuMjUgMTY5LjI1IDEyMy4yNSAxNTAuMFExMjMuMjUgMTIxLjc1IDE0NS4xMjUgMTA4LjM3NVExNjcuMCA5NS4wIDIwMC41IDk1LjBRMjMzLjUgOTUuMCAyNTQuNzUgMTA4LjM3NVEyNzYuMCAxMjEuNzUgMjc2LjUgMTQ4LjBaIiBmaWxsPSIjRjZGMUUzIiBjbGlwLXBhdGg9InVybCgjd3QpIi8+PHBhdGggZD0iTTI3Ni41IDE0OC4wVjE1MS4wSDIyNC43NVYxNTAuMFEyMjQuNzUgMTQyLjUgMjE5LjI1IDEzNy41UTIxMy43NSAxMzIuNSAyMDIuNSAxMzIuNVExOTEuNSAxMzIuNSAxODUuNjI1IDEzNS43NVExNzkuNzUgMTM5LjAgMTc5Ljc1IDE0My43NVExNzkuNzUgMTUwLjUgMTg3Ljc1IDE1My43NVExOTUuNzUgMTU3LjAgMjEzLjUgMTYwLjVRMjM0LjI1IDE2NC43NSAyNDcuNjI1IDE2OS4zNzVRMjYxLjAgMTc0LjAgMjcxLjAgMTg0LjVRMjgxLjAgMTk1LjAgMjgxLjI1IDIxMy4wUTI4MS4yNSAyNDMuMCAyNjEuMzc1IDI1Ny43NVEyNDEuNSAyNzIuNSAyMDguMCAyNzMuMEwyMDcuNSAyNzcuMjVRMjE3Ljc1IDI3OC4yNSAyMjQuMTI1IDI4My41UTIzMC41IDI4OC43NSAyMzAuNSAyOTkuNVEyMzAuNSAzMTIuMjUgMjIxLjUgMzE3LjVRMjEyLjUgMzIyLjc1IDIwMS4wIDMyMi43NVExOTIuMjUgMzIyLjc1IDE4My42MjUgMzIxLjYyNVExNzUuMCAzMjAuNSAxNjkuNSAzMTguNzVWMzA1LjI1UTE3Mi4yNSAzMDUuNSAxODEuMzc1IDMwNi4zNzVRMTkwLjUgMzA3LjI1IDE5OC43NSAzMDcuMjVRMjA4Ljc1IDMwNy4yNSAyMDguNzUgMjk5LjVRMjA4Ljc1IDI5NS41IDIwNi42MjUgMjkzLjVRMjA0LjUgMjkxLjUgMTk5LjI1IDI5MS41SDE4OS43NUwxOTIuNzUgMjcyLjc1UTE1OC41IDI3MS4wIDEzOS41IDI1Ny4wUTEyMC41IDI0My4wIDEyMC41IDIxMS43NUgxNzIuNzVRMTcyLjc1IDIyNC43NSAxNzkuNSAyMjkuMTI1UTE4Ni4yNSAyMzMuNSAyMDAuNSAyMzMuNVEyMTEuMCAyMzMuNSAyMTcuODc1IDIzMS4yNVEyMjQuNzUgMjI5LjAgMjI0Ljc1IDIyMi4wUTIyNC43NSAyMTUuNzUgMjE3LjEyNSAyMTIuNjI1UTIwOS41IDIwOS41IDE5Mi4yNSAyMDYuMFExNzEuMjUgMjAxLjUgMTU3LjUgMTk2LjYyNVExNDMuNzUgMTkxLjc1IDEzMy41IDE4MC41UTEyMy4yNSAxNjkuMjUgMTIzLjI1IDE1MC4wUTEyMy4yNSAxMjEuNzUgMTQ1LjEyNSAxMDguMzc1UTE2Ny4wIDk1LjAgMjAwLjUgOTUuMFEyMzMuNSA5NS4wIDI1NC43NSAxMDguMzc1UTI3Ni4wIDEyMS43NSAyNzYuNSAxNDguMFoiIGZpbGw9IiNFOUI5NDkiIGNsaXAtcGF0aD0idXJsKCN3YikiLz48L3N2Zz4=">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="tr_TR">
-<meta property="og:site_name" content="YARISPOSTASI">
-<meta property="og:title" content="YARISPOSTASI | At Yarışı Tahminleri ve Koşu Analizleri">
-<meta property="og:description" content="TJK yarışları için veriye dayalı at yarışı tahminleri ve analizleri. Çok yakında yarispostasi.net'te.">
+<meta property="og:site_name" content="YARIŞPOSTASI">
+<meta property="og:title" content="YARIŞPOSTASI | Yapay zekâ destekli bağımsız at yarışı analiz platformu">
+<meta property="og:description" content="Koşuyu tahmin etmek değil, anlamak. Yapay zekâ destekli bağımsız at yarışı analiz platformu — çok yakında.">
 <meta property="og:url" content="https://yarispostasi.net/">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:site" content="@YarisPostasi">
-<script type="application/ld+json">
-{"@context":"https://schema.org","@type":"Organization","name":"YARISPOSTASI","url":"https://yarispostasi.net/","description":"TJK yarışları için veriye dayalı at yarışı tahmin ve analiz platformu.","sameAs":["https://www.instagram.com/yarispostasi/","https://x.com/YarisPostasi","https://www.youtube.com/@yarispostasi","https://www.facebook.com/YarisPostasi/"]}
-</script>
-<style>
-  :root{
-    --bg:#0b1410; --bg2:#0f1d17; --card:#12241c; --line:#1f3a2d;
-    --text:#eef3ef; --muted:#9db3a6; --accent:#c9a24a; --accent2:#2f8f5b;
-  }
-  *{box-sizing:border-box;margin:0;padding:0}
-  html,body{height:100%}
-  body{
-    background:radial-gradient(1200px 600px at 50% -10%, #173326 0%, var(--bg) 60%) fixed, var(--bg);
-    color:var(--text);
-    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
-    line-height:1.6; display:flex; flex-direction:column; min-height:100vh;
-  }
-  .wrap{width:100%;max-width:760px;margin:0 auto;padding:0 16px}
-  header{padding:28px 0}
-  .brand{font-weight:800;letter-spacing:.18em;font-size:15px;color:var(--accent)}
-  main{flex:1;display:flex;align-items:center}
-  .hero{padding:40px 0 56px}
-  .rail{height:3px;width:72px;background:linear-gradient(90deg,var(--accent),var(--accent2));border-radius:2px;margin-bottom:28px}
-  h1{font-size:clamp(34px,7vw,56px);line-height:1.1;font-weight:800;letter-spacing:-.01em}
-  h1 span{color:var(--accent)}
-  .lead{margin-top:20px;font-size:clamp(17px,2.4vw,20px);color:var(--muted);max-width:620px}
-  .points{margin-top:32px;display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px}
-  .point{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px 18px}
-  .point b{display:block;font-size:15px;margin-bottom:4px}
-  .point small{color:var(--muted);font-size:14px}
-  .follow{margin-top:40px}
-  .follow p{font-size:15px;color:var(--muted);margin-bottom:12px}
-  .social{display:flex;flex-wrap:wrap;gap:10px}
-  .social a{
-    display:inline-block;padding:10px 18px;border-radius:999px;border:1px solid var(--line);
-    background:var(--bg2);color:var(--text);text-decoration:none;font-size:15px;font-weight:600;
-  }
-  .social a:hover,.social a:focus-visible{border-color:var(--accent);color:var(--accent);outline:none}
-  footer{border-top:1px solid var(--line);padding:20px 0 28px;color:var(--muted);font-size:13px}
-  footer .wrap{display:flex;flex-wrap:wrap;gap:8px 24px;justify-content:space-between}
-</style>
+<style>@font-face{font-family:'BCS';src:url(data:font/woff2;base64,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) format('woff2');font-display:swap}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:#0E4D35 radial-gradient(ellipse at 50% 0%,#125C40 0%,#0E4D35 60%) no-repeat;color:#F6F1E3;font-family:'Segoe UI',system-ui,-apple-system,Roboto,Arial,sans-serif;min-height:100vh}
+.wrap{max-width:1040px;margin:0 auto;padding:64px 24px 40px;text-align:center}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
+.logo{width:min(560px,92%);height:auto;display:block;margin:0 auto}
+.bar{width:72px;height:4px;background:#E9B949;margin:34px auto 30px;border-radius:2px}
+.slogan{font-family:'BCS',sans-serif;font-size:clamp(28px,4vw,44px);line-height:1.15}
+.sub{color:#CFE0D6;font-size:clamp(16px,1.6vw,19px);margin-top:12px}
+.soon{display:inline-block;margin-top:30px;padding:9px 22px;border:2px solid #E9B949;color:#E9B949;font-family:'BCS',sans-serif;letter-spacing:3px;font-size:15px;border-radius:999px}
+.p{max-width:720px;margin:30px auto 0;color:#CFE0D6;font-size:17px;line-height:1.65}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:42px}
+.c{background:#125C40;border-radius:14px;padding:22px 20px;text-align:left;border-top:3px solid #E9B949}
+.c b{display:block;font-family:'BCS',sans-serif;font-size:19px;font-weight:400;margin-bottom:6px}
+.c span{color:#CFE0D6;font-size:15px;line-height:1.5}
+.social{margin-top:40px;color:#CFE0D6;font-size:15px}
+.social a{display:inline-block;margin:12px 6px 0;padding:8px 16px;border-radius:8px;background:#125C40;color:#F6F1E3;text-decoration:none}
+.social a:hover,.social a:focus{background:#E9B949;color:#0E4D35}
+footer{margin-top:48px;color:#CFE0D6;font-size:13px;opacity:.85}
+@media(max-width:640px){.cards{grid-template-columns:1fr}.wrap{padding-top:44px}}</style>
 </head>
 <body>
-  <header><div class="wrap"><div class="brand">YARISPOSTASI</div></div></header>
-
-  <main>
-    <div class="wrap hero">
-      <div class="rail"></div>
-      <h1>Yarışı veriyle okuyun.<br><span>Çok yakında.</span></h1>
-      <p class="lead">YARISPOSTASI, Türkiye at yarışları için veriye dayalı bir tahmin ve analiz platformudur. Sahadan gelen derin yarış bilgisini; pist, mesafe, idman, form ve pedigri verileriyle tek bir modelde birleştiriyoruz. TJK yarış programındaki koşular için at yarışı tahminleri, altılı ganyan analizleri ve koşu yorumları çok yakında burada.</p>
-
-      <div class="points">
-        <div class="point"><b>Tahmin ve koşu analizleri</b><small>Her koşu için ölçülmüş verilere dayalı değerlendirme</small></div>
-        <div class="point"><b>İdman ve form</b><small>Galop, pist ve mesafe uyumunun ayrıntılı okuması</small></div>
-        <div class="point"><b>Pedigri</b><small>Anne hattı ve damızlık verileriyle derin inceleme</small></div>
-      </div>
-
-      <div class="follow">
-        <p>Açılıştan ilk siz haberdar olun, bizi takip edin:</p>
-        <nav class="social" aria-label="Sosyal medya">
-          <a href="https://www.instagram.com/yarispostasi/" rel="noopener noreferrer" target="_blank">Instagram</a>
-          <a href="https://x.com/YarisPostasi" rel="noopener noreferrer" target="_blank">X</a>
-          <a href="https://www.youtube.com/@yarispostasi" rel="noopener noreferrer" target="_blank">YouTube</a>
-          <a href="https://www.facebook.com/YarisPostasi/" rel="noopener noreferrer" target="_blank">Facebook</a>
-        </nav>
-      </div>
-    </div>
-  </main>
-
-  <footer>
-    <div class="wrap">
-      <span>© 2026 YARISPOSTASI · yarispostasi.net</span>
-      <span>18 yaşından küçüklerin at yarışı bahislerine katılması yasaktır.</span>
-    </div>
-  </footer>
+<main class="wrap">
+<h1 class="sr">YARIŞPOSTASI</h1>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 583 120" class="logo" role="img" aria-label="YARIŞPOSTASI"><g transform="translate(0 84)"><path d="M16.2 -1.4V-26L16.1 -26.6L2.1 -68.6Q2 -68.8 2 -69.1Q2 -70 3 -70H18Q19 -70 19.3 -68.9L24.3 -46.9Q24.4 -46.5 24.6 -46.5Q24.8 -46.5 24.9 -46.9L29.9 -68.9Q30.2 -70 31.2 -70H46.2Q46.8 -70 47.1 -69.7Q47.3 -69.3 47.1 -68.6L32.9 -26.6L32.8 -26V-1.4Q32.8 -0.9 32.5 -0.6Q32.1 -0.2 31.6 -0.2H17.4Q16.9 -0.2 16.6 -0.6Q16.2 -0.9 16.2 -1.4Z M83.7 -1.1 82.4 -9.8Q82.4 -10.3 81.8 -10.3H71Q70.4 -10.3 70.4 -9.8L69.2 -1.1Q69.1 0 67.9 0H53.7Q52.4 0 52.7 -1.3L67.2 -68.9Q67.4 -70 68.5 -70H84.8Q85.9 -70 86.1 -68.9L100.5 -1.3L100.6 -0.9Q100.6 0 99.5 0H85Q83.8 0 83.7 -1.1ZM73 -23.1H79.7Q80.1 -23.1 80.1 -23.6L76.5 -46.4Q76.4 -46.8 76.2 -46.8Q76 -46.8 75.9 -46.4L72.6 -23.6Q72.6 -23.1 73 -23.1Z M133.4 -1 126.6 -27.5Q126.5 -27.9 126.1 -27.9H124.6Q124.1 -27.9 124.1 -27.4V-1.2Q124.1 -0.7 123.8 -0.4Q123.4 0 122.9 0H108.7Q108.2 0 107.8 -0.4Q107.5 -0.7 107.5 -1.2V-68.8Q107.5 -69.3 107.8 -69.7Q108.2 -70 108.7 -70H130.2Q136 -70 140.5 -67.2Q145 -64.5 147.4 -59.5Q149.9 -54.6 149.9 -48.3Q149.9 -42.7 147.9 -38.2Q145.8 -33.8 142.1 -31.1Q141.9 -31 141.8 -30.9Q141.7 -30.7 141.8 -30.5L150.4 -1.4L150.5 -1Q150.5 0 149.4 0H134.8Q133.7 0 133.4 -1ZM124.1 -55.3V-41.1Q124.1 -40.6 124.6 -40.6H127.4Q130.1 -40.6 131.7 -42.6Q133.3 -44.6 133.3 -48.1Q133.3 -51.8 131.7 -53.8Q130.1 -55.8 127.4 -55.8H124.6Q124.1 -55.8 124.1 -55.3Z M157.6 -1.2V-68.8Q157.6 -69.3 157.9 -69.7Q158.3 -70 158.8 -70H173Q173.5 -70 173.8 -69.7Q174.2 -69.3 174.2 -68.8V-1.2Q174.2 -0.7 173.8 -0.4Q173.5 0 173 0H158.8Q158.3 0 157.9 -0.4Q157.6 -0.7 157.6 -1.2Z M208.4 0.2Q208.1 0.2 208.1 0.4Q208 0.6 208.2 0.8Q211.8 5 211.8 9.5Q211.8 10.5 211.4 12.3Q210.6 15.7 208.1 17.1Q205.7 18.5 202.5 18.5Q199.8 18.5 197.2 17.7Q196.2 17.4 196.3 16.3L197 10.6Q197.1 10 197.4 9.9Q197.7 9.7 198.2 9.7Q198.7 9.7 198.9 9.7Q200.6 9.7 201.2 7.7Q201.5 6.1 200.4 4.2Q199.4 2.3 197.2 0.4L196.6 0.1Q190 -1.5 186.1 -6.3Q182.2 -11.1 182.2 -17.8V-20.9Q182.2 -21.4 182.6 -21.8Q182.9 -22.1 183.4 -22.1H197.4Q197.9 -22.1 198.2 -21.8Q198.6 -21.4 198.6 -20.9V-18.6Q198.6 -16.2 199.8 -14.8Q200.9 -13.4 202.7 -13.4Q204.5 -13.4 205.7 -14.8Q206.8 -16.1 206.8 -18.2Q206.8 -20.5 205 -22.4Q203.2 -24.2 197.8 -28.1Q192.8 -31.7 189.6 -34.5Q186.4 -37.4 184.1 -41.7Q181.8 -45.9 181.8 -51.5Q181.8 -57.2 184.3 -61.6Q186.9 -66 191.6 -68.4Q196.2 -70.8 202.2 -70.8Q208.3 -70.8 212.9 -68.3Q217.6 -65.9 220.1 -61.5Q222.7 -57 222.7 -51.2V-48.8Q222.7 -48.3 222.3 -48Q222 -47.6 221.5 -47.6H207.6Q207.1 -47.6 206.8 -48Q206.4 -48.3 206.4 -48.8V-51.6Q206.4 -53.8 205.2 -55.2Q204 -56.6 202.2 -56.6Q200.4 -56.6 199.3 -55.2Q198.2 -53.8 198.2 -51.5Q198.2 -49 199.9 -47Q201.6 -45 206.8 -41.2Q213.1 -36.5 216.3 -33.6Q219.5 -30.7 221.3 -27.2Q223.1 -23.6 223.1 -18.8Q223.1 -11.3 219.1 -6.3Q215.2 -1.3 208.4 0.2Z" fill="#F6F1E3"/><rect x="235" y="-84" width="348.9" height="98" fill="#E9B949"/><path d="M294.8 -48.1Q294.8 -41.8 292.5 -37.1Q290.1 -32.3 285.8 -29.7Q281.5 -27.1 275.9 -27.1H269.4Q268.9 -27.1 268.9 -26.6V-1.2Q268.9 -0.7 268.5 -0.4Q268.2 0 267.7 0H253.5Q253 0 252.7 -0.4Q252.3 -0.7 252.3 -1.2V-68.8Q252.3 -69.3 252.7 -69.7Q253 -70 253.5 -70H275.1Q280.9 -70 285.4 -67.2Q289.8 -64.5 292.3 -59.5Q294.8 -54.5 294.8 -48.1ZM278.2 -47.7Q278.2 -51.6 276.5 -53.7Q274.9 -55.8 272.2 -55.8H269.4Q268.9 -55.8 268.9 -55.3V-40.4Q268.9 -39.9 269.4 -39.9H272.2Q274.9 -39.9 276.5 -42Q278.2 -44 278.2 -47.7Z M301.1 -19.9V-50.1Q301.1 -59.5 306.8 -65.2Q312.6 -70.8 322.3 -70.8Q331.9 -70.8 337.8 -65.2Q343.6 -59.5 343.6 -50.1V-19.9Q343.6 -10.4 337.8 -4.8Q331.9 0.8 322.3 0.8Q312.6 0.8 306.8 -4.8Q301.1 -10.4 301.1 -19.9ZM327 -19.2V-50.8Q327 -53.5 325.8 -55Q324.5 -56.6 322.3 -56.6Q320.1 -56.6 318.9 -55Q317.7 -53.5 317.7 -50.8V-19.2Q317.7 -16.5 318.9 -14.9Q320.1 -13.4 322.3 -13.4Q324.5 -13.4 325.8 -14.9Q327 -16.5 327 -19.2Z M350.9 -17.8V-20.9Q350.9 -21.4 351.2 -21.8Q351.6 -22.1 352.1 -22.1H366.1Q366.6 -22.1 366.9 -21.8Q367.3 -21.4 367.3 -20.9V-18.6Q367.3 -16.2 368.4 -14.8Q369.6 -13.4 371.4 -13.4Q373.2 -13.4 374.3 -14.8Q375.5 -16.1 375.5 -18.2Q375.5 -20.5 373.7 -22.4Q371.9 -24.2 366.5 -28.1Q361.5 -31.7 358.3 -34.5Q355.1 -37.4 352.8 -41.7Q350.5 -45.9 350.5 -51.5Q350.5 -57.2 353 -61.6Q355.6 -66 360.2 -68.4Q364.9 -70.8 370.9 -70.8Q377 -70.8 381.6 -68.3Q386.3 -65.9 388.8 -61.5Q391.4 -57 391.4 -51.2V-48.8Q391.4 -48.3 391 -48Q390.7 -47.6 390.2 -47.6H376.3Q375.8 -47.6 375.4 -48Q375.1 -48.3 375.1 -48.8V-51.6Q375.1 -53.8 373.9 -55.2Q372.7 -56.6 370.9 -56.6Q369.1 -56.6 368 -55.2Q366.9 -53.8 366.9 -51.5Q366.9 -49 368.6 -47Q370.3 -45 375.5 -41.2Q381.8 -36.5 385 -33.6Q388.2 -30.7 390 -27.2Q391.8 -23.6 391.8 -18.8Q391.8 -9.8 386.1 -4.5Q380.5 0.8 371.3 0.8Q365.2 0.8 360.6 -1.6Q356 -3.9 353.4 -8.2Q350.9 -12.4 350.9 -17.8Z M442.1 -68.8V-57Q442.1 -56.5 441.7 -56.2Q441.4 -55.8 440.9 -55.8H428.5Q428 -55.8 428 -55.3V-1.2Q428 -0.7 427.6 -0.4Q427.3 0 426.8 0H412.6Q412.1 0 411.7 -0.4Q411.4 -0.7 411.4 -1.2V-55.3Q411.4 -55.8 410.9 -55.8H399Q398.5 -55.8 398.1 -56.2Q397.8 -56.5 397.8 -57V-68.8Q397.8 -69.3 398.1 -69.7Q398.5 -70 399 -70H440.9Q441.4 -70 441.7 -69.7Q442.1 -69.3 442.1 -68.8Z M478.7 -1.1 477.4 -9.8Q477.4 -10.3 476.8 -10.3H466Q465.4 -10.3 465.4 -9.8L464.2 -1.1Q464.1 0 462.9 0H448.7Q447.4 0 447.7 -1.3L462.2 -68.9Q462.4 -70 463.5 -70H479.8Q480.9 -70 481.1 -68.9L495.5 -1.3L495.6 -0.9Q495.6 0 494.5 0H480Q478.8 0 478.7 -1.1ZM468 -23.1H474.7Q475.1 -23.1 475.1 -23.6L471.5 -46.4Q471.4 -46.8 471.2 -46.8Q471 -46.8 470.9 -46.4L467.6 -23.6Q467.6 -23.1 468 -23.1Z M501.6 -17.8V-20.9Q501.6 -21.4 501.9 -21.8Q502.3 -22.1 502.8 -22.1H516.8Q517.3 -22.1 517.6 -21.8Q518 -21.4 518 -20.9V-18.6Q518 -16.2 519.1 -14.8Q520.3 -13.4 522.1 -13.4Q523.9 -13.4 525 -14.8Q526.2 -16.1 526.2 -18.2Q526.2 -20.5 524.4 -22.4Q522.6 -24.2 517.2 -28.1Q512.2 -31.7 509 -34.5Q505.8 -37.4 503.5 -41.7Q501.2 -45.9 501.2 -51.5Q501.2 -57.2 503.7 -61.6Q506.3 -66 510.9 -68.4Q515.6 -70.8 521.6 -70.8Q527.7 -70.8 532.3 -68.3Q537 -65.9 539.5 -61.5Q542.1 -57 542.1 -51.2V-48.8Q542.1 -48.3 541.8 -48Q541.4 -47.6 540.9 -47.6H527Q526.5 -47.6 526.1 -48Q525.8 -48.3 525.8 -48.8V-51.6Q525.8 -53.8 524.6 -55.2Q523.4 -56.6 521.6 -56.6Q519.8 -56.6 518.7 -55.2Q517.6 -53.8 517.6 -51.5Q517.6 -49 519.3 -47Q521 -45 526.2 -41.2Q532.5 -36.5 535.7 -33.6Q538.9 -30.7 540.7 -27.2Q542.5 -23.6 542.5 -18.8Q542.5 -9.8 536.8 -4.5Q531.2 0.8 522 0.8Q515.9 0.8 511.3 -1.6Q506.7 -3.9 504.1 -8.2Q501.6 -12.4 501.6 -17.8Z M549.9 -1.2V-68.8Q549.9 -69.3 550.2 -69.7Q550.6 -70 551.1 -70H565.3Q565.8 -70 566.1 -69.7Q566.5 -69.3 566.5 -68.8V-1.2Q566.5 -0.7 566.1 -0.4Q565.8 0 565.3 0H551.1Q550.6 0 550.2 -0.4Q549.9 -0.7 549.9 -1.2Z" fill="#0E4D35"/></g></svg>
+<div class="bar"></div>
+<p class="slogan">Koşuyu tahmin etmek değil, anlamak.</p>
+<p class="sub">Yapay zekâ destekli bağımsız at yarışı analiz platformu</p>
+<div class="soon">ÇOK YAKINDA</div>
+<p class="p">YARIŞPOSTASI, Türkiye at yarışlarını veriyle okumak için geliştirilen bağımsız bir analiz platformudur.
+Pist, mesafe, idman, form ve pedigri verilerini tek bir yerde, ölçülmüş ve doğrulanmış biçimde bir araya getiriyoruz.</p>
+<div class="cards">
+<div class="c"><b>Koşu analizi</b><span>Her koşu için ölçülmüş verilere dayalı değerlendirme</span></div>
+<div class="c"><b>İdman ve form</b><span>Galop, pist ve mesafe uyumunun ayrıntılı okuması</span></div>
+<div class="c"><b>Pedigri</b><span>Anne hattı ve damızlık verileriyle derin inceleme</span></div>
+</div>
+<div class="social"><p>Açılıştan ilk siz haberdar olun, bizi takip edin:</p>
+<nav aria-label="Sosyal medya">
+<a href="https://www.instagram.com/yarispostasi/" rel="noopener noreferrer" target="_blank">Instagram</a>
+<a href="https://x.com/YarisPostasi" rel="noopener noreferrer" target="_blank">X</a>
+<a href="https://www.youtube.com/@yarispostasi" rel="noopener noreferrer" target="_blank">YouTube</a>
+<a href="https://www.facebook.com/YarisPostasi/" rel="noopener noreferrer" target="_blank">Facebook</a>
+</nav></div>
+<footer>© 2026 YARIŞPOSTASI · yarispostasi.net · Bahis hizmeti değildir.</footer>
+</main>
 </body>
 </html>
